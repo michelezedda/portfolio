@@ -20,13 +20,13 @@
   div {
     text-align: center;
     background: lighten($black-color, 15%);
-    border-radius: 20px;
+    border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
     cursor: pointer;
   }
   img {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     max-width: 100%;
     padding-bottom: 15px;
   }
@@ -38,7 +38,7 @@
   div:hover {
     background-color: $hover-container-color;
     transform: translateY(-10px);
-    box-shadow: 4px 4px 25px #ffffff5b;
+    box-shadow: 4px 4px 8px $gray-color;
   }
 }
 .work-name {
@@ -51,17 +51,6 @@
   opacity: 0.5;
   cursor: not-allowed;
   color: $purple-color;
-}
-.unavailable {
-  font-size: 25px;
-  pointer-events: none;
-}
-.work-in-progress {
-  display: block;
-  color: red;
-  font-weight: 500;
-  padding-bottom: 10px;
-  font-size: 20px;
 }
 .work-description {
   color: $primary-color;
@@ -82,19 +71,21 @@
   }
   .works-list {
     grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
+    row-gap: 30px;
+    column-gap: 20px;
     padding-top: 40px;
-    div {
-      padding: 10px;
-    }
     .non-click {
       pointer-events: none;
     }
     .bookshelf {
-      background-color: #ddd;
+      background-color: $gray-color;
       opacity: 0.5;
       cursor: not-allowed;
+    }
+    .bookshelf:hover {
+      transform: none;
+      background-color: $gray-color;
+      box-shadow: none;
     }
     .onlydesktop-disclaimer {
       display: block;
@@ -120,20 +111,25 @@
     img {
       max-width: 100%;
     }
-  }
-  .non-click {
-    pointer-events: none;
-  }
-  .bookshelf {
-    background-color: #ddd;
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-  .onlydesktop-disclaimer {
-    display: block;
-    color: red;
-    font-weight: 500;
-    padding-bottom: 25px;
+    .non-click {
+      pointer-events: none;
+    }
+    .bookshelf {
+      background-color: $gray-color;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .bookshelf:hover {
+      transform: none;
+      background-color: $gray-color;
+      box-shadow: none;
+    }
+    .onlydesktop-disclaimer {
+      display: block;
+      color: red;
+      font-weight: 500;
+      padding-bottom: 25px;
+    }
   }
 }
 @media (min-width: 1400.02px) and (max-width: 2100px) {

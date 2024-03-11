@@ -1,7 +1,21 @@
+import React, { useEffect } from "react";
+import Typed from "typed.js";
 import "../styles/header.css";
 import MyHeaderPic from "/public/coding.gif";
 
 function Header() {
+  useEffect(() => {
+    const typed = new Typed(".typedText", {
+      strings: ["Michele Zedda"],
+      typeSpeed: 100,
+      loop: false,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <>
       <div id="header">
@@ -13,7 +27,7 @@ function Header() {
           </p>
         </div>
         <div className="right-header-section">
-          <img src={MyHeaderPic} />
+          <img src={MyHeaderPic} alt="Header" />
         </div>
       </div>
     </>

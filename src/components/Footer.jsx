@@ -1,13 +1,9 @@
 import "../styles/footer.css";
-import {
-  FaInstagram,
-  FaLinkedinIn,
-  FaRegCopyright,
-  FaGithub,
-} from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { FaThreads } from "react-icons/fa6";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <div id="footer">
@@ -40,12 +36,7 @@ function Footer() {
           </a>
         </div>
         <div className="copyright">
-          <p>
-            <i>
-              <FaRegCopyright />
-            </i>{" "}
-            2024 Michele Zedda. All rights reserved.
-          </p>
+          <p>&copy; {currentYear} Michele Zedda. All rights reserved.</p>
           <br />
           <a href="https://storyset.com/technology">
             Illustrations by Storyset

@@ -53,7 +53,7 @@ nav {
     color: $primary-color;
   }
   nav {
-    position: fixed;
+    position: absolute;
     display: block;
     width: 100%;
     background-color: $black-color;
@@ -79,7 +79,8 @@ nav {
     .menu {
       clear: both;
       max-height: 0;
-      transition: max-height 0.2s ease-out;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out;
     }
     .menu a {
       border-radius: 20px;
@@ -152,6 +153,9 @@ nav {
       transform: rotate(45deg);
       top: 0;
     }
+    .menu-btn:checked ~ .menu {
+      max-height: 500px;
+    }
     a::after {
       display: none;
     }
@@ -192,7 +196,8 @@ nav {
     .menu {
       clear: both;
       max-height: 0;
-      transition: max-height 0.2s ease-out;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out;
     }
     .menu a {
       border-radius: 20px;
@@ -265,6 +270,9 @@ nav {
     .menu-btn:checked ~ .menu-icon .nav-icon:after {
       transform: rotate(45deg);
       top: 0;
+    }
+    .menu-btn:checked ~ .menu {
+      max-height: 500px;
     }
     a::after {
       display: none;

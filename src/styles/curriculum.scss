@@ -1,5 +1,17 @@
 @import "config";
 
+* {
+  font-family: $font-stack;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $black-color;
+  color: $primary-color;
+  margin-left: 300px;
+  margin-right: 300px;
+}
 h1 {
   text-align: center;
   font-weight: 700;
@@ -92,41 +104,13 @@ h1 {
     margin-left: 50px;
   }
 }
-/* FOOTER */
-#footer {
-  color: #b4b4b4;
-  background: rgba(26, 26, 26, 0.5);
-  width: 100%;
-  margin: 200px 0 0 0;
-  border-radius: 5px;
-}
-.social-media-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 0 50px 0;
-  width: 100%;
-  a {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 40px;
-    color: $primary-color;
-    transition: transform 0.5s;
-  }
-  a:hover {
-    color: $purple-color;
-    transform: translateY(-5px);
-  }
-}
-.copyright {
-  text-align: center;
-  font-weight: 300;
-  padding-bottom: 50px;
-}
 
 // MEDIA QUERIES //
 @media (max-width: 850px) {
-  /* CURRICULUM */
+  body {
+    margin: 0;
+    padding: 0;
+  }
   h1 {
     margin: 20px 10px 0 10px;
     font-size: 55px;
@@ -181,6 +165,10 @@ h1 {
   }
 }
 @media (min-width: 850.02px) and (max-width: 1800px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
   #cv {
     margin: 20px 40px 0 40px;
   }

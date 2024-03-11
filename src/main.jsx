@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     errorElement: <NotFoundPage />,
   },
   {
-    path: "./pages/curriculum/",
+    path: "/curriculum/",
     element: <Curriculum />,
   },
 ]);

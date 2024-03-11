@@ -1,6 +1,5 @@
 import "../styles/navbar.css";
 import MyLogo from "/public/logo.png";
-import { Link } from "react-router-dom";
 
 function Navbar() {
   return (

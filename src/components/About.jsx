@@ -25,10 +25,11 @@ function About() {
             Let's connect, collaborate, and create something extraordinary.
             Together, we can turn dreams into digital realities!{" "}
           </p>
-          <Link to="../pages/curriculum/"></Link>
-          <button>
-            <i className="fa-solid fa-file"></i>&nbsp; View curriculum
-          </button>
+          <Link to="/curriculum/">
+            <button className="button">
+              <i className="fa-solid fa-file"></i>&nbsp; View curriculum
+            </button>
+          </Link>
         </div>
       </div>
     </>

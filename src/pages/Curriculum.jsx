@@ -1,47 +1,78 @@
 import "../styles/curriculum.css";
-import NavBar from "../components/Navbar.jsx";
-import Footer from "../components/Footer.jsx";
+import CvNavbar from "../components/CvNavbar";
+import Footer from "../components/Footer";
+import {
+  FaIdCardClip,
+  FaUser,
+  FaLocationDot,
+  FaBriefcase,
+  FaBolt,
+} from "react-icons/fa6";
+import { TbPrompt, TbWorld } from "react-icons/tb";
+import { IoPhonePortraitOutline } from "react-icons/io5";
+import { MdOutlineAlternateEmail } from "react-icons/md";
+import { FiTarget } from "react-icons/fi";
+import { IoSchool, IoLanguageSharp } from "react-icons/io5";
 
 function Curriculum() {
   return (
     <>
-      <NavBar />
+      <CvNavbar />
       <h1>MY CURRICULUM</h1>
-      <div className="cv">
+      <div id="cv">
         <div className="grid-container">
           <div className="personal-info-container">
             <h2>
-              <i className="fa-solid fa-id-card-clip"></i>&nbsp; Personal
-              Information
+              <i>
+                <FaIdCardClip />
+              </i>
             </h2>
             <p>
-              <i className="fa-solid fa-user"></i>&nbsp; Michele Zedda
+              <i>
+                <FaUser />
+              </i>
+              &nbsp; Michele Zedda
             </p>
             <p>
-              <i className="fa-solid fa-terminal"></i>&nbsp; Junior Full Stack
-              Developer
+              <i>
+                <TbPrompt />
+              </i>
+              &nbsp; Junior Full Stack Developer
             </p>
             <p>
-              <i className="fa-solid fa-phone"></i>&nbsp; +39 3497063530
+              <i>
+                <IoPhonePortraitOutline />
+              </i>
+              &nbsp; +39 3497063530
             </p>
             <p>
-              <i className="fa-solid fa-envelope"></i>&nbsp;
-              michelezedda.dev@gmail.com
+              <i>
+                <MdOutlineAlternateEmail />
+              </i>
+              &nbsp; michelezedda.dev@gmail.com
             </p>
             <p>
-              <i className="fa-solid fa-earth-americas"></i>&nbsp;{" "}
+              <i>
+                <TbWorld />
+              </i>
+              &nbsp;
               <a href="https://michelezedda.netlify.app/" target="_blank">
                 Website
               </a>
             </p>
             <p>
-              <i className="fa-solid fa-map-pin"></i>&nbsp; Assemini (CA) -
-              09032 Italy
+              <i>
+                <FaLocationDot />
+              </i>
+              &nbsp; Assemini (CA) - 09032 Italy
             </p>
           </div>
           <div className="career-container">
             <h2>
-              <i className="fa-solid fa-bullseye"></i>&nbsp; Career Objective
+              <i>
+                <FiTarget />
+              </i>
+              &nbsp; Career Objective
             </h2>
             <p>
               Aspiring to become a proficient web developer, my career objective
@@ -56,7 +87,10 @@ function Curriculum() {
         </div>
         <div className="cv-sections">
           <h2>
-            <i className="fa-solid fa-user-graduate"></i>&nbsp; Education
+            <i>
+              <IoSchool />
+            </i>
+            &nbsp; Education
           </h2>
           <ul>
             <li>start2impact University</li>
@@ -65,7 +99,10 @@ function Curriculum() {
             <p>2016 &mdash; Tourism and Hospitality</p>
           </ul>
           <h2>
-            <i className="fa-solid fa-briefcase"></i>&nbsp; Work History
+            <i>
+              <FaBriefcase />
+            </i>
+            &nbsp; Work History
           </h2>
           <ul>
             <li>Liggi Dental Clinic</li>
@@ -74,7 +111,10 @@ function Curriculum() {
             <p>2020 &mdash; Insurance Agent</p>
           </ul>
           <h2>
-            <i className="fa-solid fa-bolt"></i>&nbsp; Skills
+            <i>
+              <FaBolt />
+            </i>
+            &nbsp; Skills
           </h2>
           <ul>
             <li>HTML</li>
@@ -96,7 +136,10 @@ function Curriculum() {
             <li>WordPress</li>
           </ul>
           <h2>
-            <i className="fa-solid fa-language"></i>&nbsp; Languages
+            <i>
+              <IoLanguageSharp />
+            </i>
+            &nbsp; Languages
           </h2>
           <ul>
             <li>English</li>

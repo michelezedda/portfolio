@@ -1,0 +1,193 @@
+@import "config";
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 70px;
+  color: $purple-color;
+  padding-top: 50px;
+}
+#cv {
+  background-color: rgba(49, 29, 71, 0.9);
+  margin: 50px 30px 0 30px;
+  border: solid 3px $purple-color;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding: 20px;
+  i {
+    color: $purple-color;
+  }
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+  a:hover {
+    color: $purple-color;
+    cursor: pointer;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-gap: 50px;
+}
+.personal-info-container {
+  background-color: $container-color;
+  border: solid 3px $primary-color;
+  border-radius: 15px;
+  width: 100%;
+  padding: 40px;
+  h2 {
+    color: $purple-color;
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+    padding-bottom: 25px;
+  }
+  p {
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+}
+.career-container {
+  background-color: $container-color;
+  border: solid 3px $primary-color;
+  border-radius: 15px;
+  width: 100%;
+  padding: 40px;
+  h2 {
+    color: $purple-color;
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+    padding-bottom: 25px;
+  }
+  p {
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+}
+.cv-sections {
+  background-color: $container-color;
+  border: solid 3px $primary-color;
+  border-radius: 15px;
+  width: 100%;
+  padding: 15px 20px 40px 60px;
+  h2 {
+    color: $purple-color;
+    text-align: left;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 25px 0 20px 0;
+  }
+  li {
+    font-size: 25px;
+    padding-bottom: 5px;
+    margin-left: 50px;
+  }
+  p {
+    font-size: 20px;
+    padding-bottom: 15px;
+    margin-left: 50px;
+  }
+}
+/* FOOTER */
+#footer {
+  color: #b4b4b4;
+  background: rgba(26, 26, 26, 0.5);
+  width: 100%;
+  margin: 200px 0 0 0;
+  border-radius: 5px;
+}
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 50px 0;
+  width: 100%;
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 40px;
+    color: $primary-color;
+    transition: transform 0.5s;
+  }
+  a:hover {
+    color: $purple-color;
+    transform: translateY(-5px);
+  }
+}
+.copyright {
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 50px;
+}
+
+// MEDIA QUERIES //
+@media (max-width: 850px) {
+  /* CURRICULUM */
+  h1 {
+    margin: 20px 10px 0 10px;
+    font-size: 55px;
+  }
+  #cv {
+    margin: 20px 5px 0 5px;
+    padding: 10px;
+    grid-template-columns: 1fr;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .cv-sections {
+    padding: 0 10px 40px 20px;
+    h2 {
+      text-align: center;
+    }
+  }
+  .personal-info-container {
+    padding: 10px;
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .career-container {
+    padding: 10px;
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .cv-sections {
+    padding: 0 5px 10px 5px;
+    h2 {
+      font-size: 25px;
+    }
+    li {
+      font-size: 20px;
+      padding-bottom: 3px;
+      margin-left: 25px;
+    }
+    p {
+      font-size: 20px;
+      padding-bottom: 3px;
+      margin-left: 25px;
+    }
+  }
+}
+@media (min-width: 850.02px) and (max-width: 1800px) {
+  #cv {
+    margin: 20px 40px 0 40px;
+  }
+  .cv-sections {
+    padding: 0 20px 40px 20px;
+    h2 {
+      text-align: center;
+    }
+  }
+}

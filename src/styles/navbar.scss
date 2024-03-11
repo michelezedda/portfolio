@@ -1,0 +1,289 @@
+@import "config";
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px 0 100px;
+  width: 100%;
+  background-color: $black-color;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  border: solid 0 $gray-color;
+  border-bottom-width: 1px;
+  z-index: 100;
+  img {
+    width: 200px;
+  }
+  li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+  }
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+  }
+  a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: $purple-color;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  a:hover::after {
+    width: 100%;
+    cursor: pointer;
+  }
+  .menu-btn {
+    display: none;
+  }
+}
+
+// MEDIA QUERIES //
+@media (max-width: 750px) {
+  a {
+    color: $primary-color;
+  }
+  nav {
+    position: fixed;
+    display: block;
+    width: 100%;
+    background-color: $black-color;
+    box-shadow: 1px 1px 5px lighten($gray-color, 10%);
+    z-index: 3;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      overflow: hidden;
+      text-align: center;
+      background-color: $black-color;
+    }
+    a {
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+    }
+    img {
+      width: 150px;
+    }
+    .menu {
+      clear: both;
+      max-height: 0;
+      transition: max-height 0.2s ease-out;
+    }
+    .menu a {
+      border-radius: 20px;
+    }
+    .menu a:hover {
+      background: $purple-color;
+      transition: 0.5s;
+      color: $black-color;
+      font-weight: 500;
+    }
+    .menu a:active {
+      background: darken($purple-color, 10%);
+      transition: 0.2s;
+      color: $black-color;
+      font-weight: 500;
+      transform: scale(0.98);
+    }
+    .menu-icon {
+      top: 40px;
+      width: 40px;
+      position: relative;
+      float: right;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-icon {
+      background: $primary-color;
+      display: block;
+      height: 5px;
+      width: 100px;
+      position: relative;
+      transition: background 0.5s ease-out;
+      border-radius: 999px;
+    }
+    .nav-icon:before {
+      background: $primary-color;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all 0.5s ease-out;
+      top: -15px;
+      border-radius: 999px;
+    }
+    .nav-icon:after {
+      background: $primary-color;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all 0.5s ease-out;
+      top: 15px;
+      border-radius: 999px;
+    }
+    .menu-btn:checked ~ .menu {
+      max-height: 100%;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon {
+      background: transparent;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon:before {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon:after {
+      transform: rotate(45deg);
+      top: 0;
+    }
+    a::after {
+      display: none;
+    }
+    a:hover::after {
+      display: none;
+    }
+  }
+}
+@media (min-width: 750.02px) and (max-width: 1400px) {
+  a {
+    color: $primary-color;
+  }
+  nav {
+    position: fixed;
+    display: block;
+    width: 100%;
+    background-color: $black-color;
+    box-shadow: 1px 1px 5px lighten($gray-color, 10%);
+    z-index: 3;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      overflow: hidden;
+      text-align: center;
+      background-color: $black-color;
+    }
+    a {
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+    }
+    img {
+      width: 180px;
+      margin-left: 30px;
+    }
+    .menu {
+      clear: both;
+      max-height: 0;
+      transition: max-height 0.2s ease-out;
+    }
+    .menu a {
+      border-radius: 20px;
+    }
+    .menu a:hover {
+      background: $purple-color;
+      transition: 0.5s;
+      color: $black-color;
+      font-weight: 500;
+    }
+    .menu a:active {
+      background: darken($purple-color, 10%);
+      transition: 0.2s;
+      color: $black-color;
+      font-weight: 500;
+      transform: scale(0.98);
+    }
+    .menu-icon {
+      top: 47px;
+      margin-right: 100px;
+      width: 50px;
+      position: relative;
+      float: right;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-icon {
+      background: $primary-color;
+      display: block;
+      height: 5px;
+      width: 100px;
+      position: relative;
+      transition: background 0.5s ease-out;
+      border-radius: 999px;
+    }
+    .nav-icon:before {
+      background: $primary-color;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all 0.5s ease-out;
+      top: -15px;
+      border-radius: 999px;
+    }
+    .nav-icon:after {
+      background: $primary-color;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all 0.5s ease-out;
+      top: 15px;
+      border-radius: 999px;
+    }
+    .menu-btn:checked ~ .menu {
+      max-height: 100%;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon {
+      background: transparent;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon:before {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon:after {
+      transform: rotate(45deg);
+      top: 0;
+    }
+    a::after {
+      display: none;
+    }
+    a:hover::after {
+      display: none;
+    }
+  }
+}
+@media (min-width: 1400.02px) and (max-width: 2100px) {
+  a {
+    color: $primary-color;
+  }
+  nav {
+    a {
+      font-size: 20px;
+    }
+    img {
+      width: 180px;
+    }
+  }
+}

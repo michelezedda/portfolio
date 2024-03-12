@@ -1,4 +1,8 @@
-@import "config";
+$font-stack: Roboto, Arial;
+$black-color: #000;
+$primary-color: #fff;
+$purple-color: #a375ff;
+$container-color: rgb(6, 0, 12);
 
 .cvnavbar {
   display: flex;
@@ -26,26 +30,16 @@
     font-size: 40px;
     position: relative;
   }
-  a::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background: $purple-color;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+  li:active {
+    transform: scale(0.95);
   }
   .nav-logo {
     padding-left: 40%;
   }
-  .menu-btn {
-    display: none;
-  }
 }
 
 // MEDIA QUERIES //
-@media (max-width: 850px) {
+@media (max-width: 750px) {
   .cvnavbar {
     padding: 0 5% 0 5%;
     img {
@@ -61,31 +55,9 @@
       position: relative;
       padding: 20px;
     }
-    .menu a {
-      border-radius: 10px;
-    }
-    .menu a:hover {
-      background: $purple-color;
-      transition: 0.5s;
-      color: $black-color;
-      font-weight: 500;
-    }
-    .menu a:active {
-      background: darken($purple-color, 10%);
-      transition: 0.2s;
-      color: $black-color;
-      font-weight: 500;
-      transform: scale(0.98);
-    }
-    a::after {
-      display: none;
-    }
-    a:hover::after {
-      display: none;
-    }
   }
 }
-@media (min-width: 850.02px) and (max-width: 1800px) {
+@media (min-width: 750.02px) and (max-width: 1800px) {
   .cvnavbar {
     padding: 0 50px 0 100px;
     img {
@@ -100,28 +72,6 @@
       font-size: 40px;
       position: relative;
       padding: 10px;
-    }
-    .menu a {
-      border-radius: 15px;
-    }
-    .menu a:hover {
-      background: $purple-color;
-      transition: 0.5s;
-      color: $black-color;
-      font-weight: 500;
-    }
-    .menu a:active {
-      background: darken($purple-color, 10%);
-      transition: 0.2s;
-      color: $black-color;
-      font-weight: 500;
-      transform: scale(0.98);
-    }
-    a::after {
-      display: none;
-    }
-    a:hover::after {
-      display: none;
     }
   }
 }

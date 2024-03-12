@@ -19,6 +19,7 @@ $gray-color: #262626;
   color: $primary-color;
   font-weight: 500;
   transition: backgroud 0.5s;
+  text-decoration: none;
   cursor: pointer;
   &:hover {
     background: darken($purple-color, 10%);
@@ -29,7 +30,8 @@ $gray-color: #262626;
 }
 
 .right-about-section button,
-.left-contacts-section button {
+.left-contacts-section button,
+.notfoundpage-container button {
   @extend %button;
 }
 
@@ -37,7 +39,7 @@ $gray-color: #262626;
 @media (max-width: 750px) {
   body {
     margin: 0;
-    padding: 30px 0 0 0;
+    padding: 0;
   }
 }
 @media (min-width: 750.02px) and (max-width: 1400px) {

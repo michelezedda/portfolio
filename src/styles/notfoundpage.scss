@@ -1,5 +1,18 @@
 @import "config";
 
+.notfoundpage-container {
+  padding: 150px 80px 100px 80px;
+  text-align: center;
+  h2 {
+    padding-top: 50px;
+    font-size: 30px;
+    color: $primary-color;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
 // MEDIA QUERIES //
 @media (max-width: 750px) {
 }

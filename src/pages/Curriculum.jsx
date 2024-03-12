@@ -7,11 +7,12 @@ import {
   FaLocationDot,
   FaBriefcase,
   FaBolt,
+  FaTerminal,
+  FaBullseye,
 } from "react-icons/fa6";
-import { TbPrompt, TbWorld } from "react-icons/tb";
+import { TbWorld } from "react-icons/tb";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { MdOutlineAlternateEmail } from "react-icons/md";
-import { FiTarget } from "react-icons/fi";
 import { IoSchool, IoLanguageSharp } from "react-icons/io5";
 
 function Curriculum() {
@@ -24,7 +25,10 @@ function Curriculum() {
           <div className="personal-info-container">
             <h2>
               <i>
-                <FaIdCardClip />
+                <h2>
+                  <FaIdCardClip />
+                  &nbsp; Personal Information
+                </h2>
               </i>
             </h2>
             <p>
@@ -35,7 +39,7 @@ function Curriculum() {
             </p>
             <p>
               <i>
-                <TbPrompt />
+                <FaTerminal />
               </i>
               &nbsp; Junior Full Stack Developer
             </p>
@@ -70,7 +74,7 @@ function Curriculum() {
           <div className="career-container">
             <h2>
               <i>
-                <FiTarget />
+                <FaBullseye />
               </i>
               &nbsp; Career Objective
             </h2>

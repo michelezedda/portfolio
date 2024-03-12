@@ -1,7 +1,7 @@
 @import "config";
 
 #skills {
-  padding: 200px 80px 0 80px;
+  padding: 150px 80px 0 80px;
 }
 .skills-container h2 {
   font-size: 80px;
@@ -37,7 +37,7 @@
 // MEDIA QUERIES //
 @media (max-width: 750px) {
   #skills {
-    padding: 200px 30px 0 30px;
+    padding: 150px 30px 0 30px;
   }
   .skills-container h2 {
     padding-top: 0;
@@ -61,7 +61,7 @@
 }
 @media (min-width: 750.02px) and (max-width: 1400px) {
   #skills {
-    padding: 200px 30px 0 30px;
+    padding: 150px 30px 0 30px;
   }
   .skills-container {
     text-align: center;

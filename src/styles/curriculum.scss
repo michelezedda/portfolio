@@ -1,4 +1,8 @@
-@import "config";
+$font-stack: Roboto, Arial;
+$black-color: #000;
+$primary-color: #fff;
+$purple-color: #a375ff;
+$container-color: rgb(6, 0, 12);
 
 * {
   font-family: $font-stack;
@@ -17,7 +21,6 @@ h1 {
   font-weight: 700;
   font-size: 70px;
   color: $purple-color;
-  padding-top: 50px;
 }
 #cv {
   background-color: rgba(49, 29, 71, 0.9);
@@ -55,11 +58,11 @@ h1 {
     text-align: center;
     font-weight: 500;
     font-size: 35px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
   }
   p {
     font-size: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
   }
 }
 .career-container {
@@ -73,11 +76,11 @@ h1 {
     text-align: center;
     font-weight: 500;
     font-size: 35px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
   }
   p {
     font-size: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
   }
 }
 .cv-sections {
@@ -91,7 +94,7 @@ h1 {
     text-align: left;
     font-weight: 500;
     font-size: 35px;
-    padding: 25px 0 20px 0;
+    padding: 15px 0 10px 0;
   }
   li {
     font-size: 25px;
@@ -100,13 +103,13 @@ h1 {
   }
   p {
     font-size: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     margin-left: 50px;
   }
 }
 
 // MEDIA QUERIES //
-@media (max-width: 850px) {
+@media (max-width: 750px) {
   body {
     margin: 0;
     padding: 0;
@@ -164,7 +167,7 @@ h1 {
     }
   }
 }
-@media (min-width: 850.02px) and (max-width: 1800px) {
+@media (min-width: 750.02px) and (max-width: 1800px) {
   body {
     margin: 0;
     padding: 0;

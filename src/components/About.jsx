@@ -1,6 +1,7 @@
 import "../styles/about.css";
 import { Link } from "react-router-dom";
 import MyPic from "/public/profile-icon.png";
+import { FaFile } from "react-icons/fa6";
 
 function About() {
   return (
@@ -27,7 +28,10 @@ function About() {
           </p>
           <Link to="/curriculum/">
             <button className="button">
-              <i className="fa-solid fa-file"></i>&nbsp; View curriculum
+              <i>
+                <FaFile />
+              </i>
+              &nbsp; View curriculum
             </button>
           </Link>
         </div>

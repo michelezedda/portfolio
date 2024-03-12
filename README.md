@@ -31,4 +31,4 @@ My personal website is an online portfolio to showcase my work, skills, and achi
 
 ## Project Link
 You see my personal website by clicking the following link :link: [Michele Zedda Portfolio](https://michelezedda.netlify.app/) <br/>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/850d79b5-c415-4458-8eaf-7db40c9c00c6/deploy-status)](https://app.netlify.com/sites/michelezedda/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ea4f4b82-8f58-4f5c-b138-5bdd437e6013/deploy-status)](https://app.netlify.com/sites/michelezedda/deploys)

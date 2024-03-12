@@ -1,0 +1,58 @@
+// GENERAL //
+$font-stack: Roboto, Arial;
+$black-color: #000;
+$primary-color: #fff;
+$purple-color: #a375ff;
+$hover-container-color: rgb(54, 40, 80);
+$gray-color: #262626;
+
+// BUTTONS //
+%button {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: none;
+  background-color: $purple-color;
+  font-size: 20px;
+  padding: 15px 50px;
+  border-radius: 5px;
+  color: $primary-color;
+  font-weight: 500;
+  transition: backgroud 0.5s;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    background: darken($purple-color, 10%);
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.right-about-section button,
+.left-contacts-section button,
+.notfoundpage-container button {
+  @extend %button;
+}
+
+// MEDIA QUERIES //
+@media (max-width: 750px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 750.02px) and (max-width: 1400px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 1400.02px) and (max-width: 2100px) {
+  body {
+    background-color: $black-color;
+    color: $primary-color;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}

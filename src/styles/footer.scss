@@ -1,0 +1,47 @@
+@import "config";
+
+#footer {
+  position: relative;
+  margin-top: 150px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: $primary-color;
+  background: darken($gray-color, 10%);
+  border-radius: 5px;
+}
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 50px 0;
+  width: 100%;
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 40px;
+    color: $primary-color;
+    transition: transform 0.5s;
+  }
+  a:hover {
+    color: $purple-color;
+    transform: translateY(-5px);
+  }
+}
+.copyright {
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 50px;
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+// MEDIA QUERIES //
+@media (max-width: 750px) {
+}
+@media (min-width: 750.02px) and (max-width: 1400px) {
+}
+@media (min-width: 1400.02px) and (max-width: 2100px) {
+}

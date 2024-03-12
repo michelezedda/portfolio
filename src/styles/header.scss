@@ -1,0 +1,90 @@
+@import "config";
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 100px 80px 0 80px;
+}
+.left-header-section {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  h1 {
+    color: $primary-color;
+    padding-top: 250px;
+    font-size: 30px;
+    font-weight: 300;
+  }
+}
+.title {
+  padding-top: 30px;
+  font-size: 80px;
+  font-weight: 700;
+  span {
+    color: $purple-color;
+  }
+}
+.right-header-section {
+  width: 85%;
+  justify-self: center;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
+// MEDIA QUERIES //
+@media (max-width: 750px) {
+  #header {
+    display: flex;
+    padding: 150px 30px 0 30px;
+    width: 100%;
+  }
+  .left-header-section h1 {
+    padding-top: 0;
+  }
+  .right-header-section {
+    display: none;
+  }
+}
+@media (min-width: 750.02px) and (max-width: 1400px) {
+  #header {
+    display: flex;
+    padding: 60px 30px 0 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .right-header-section {
+    display: none;
+  }
+  /* ABOUT */
+  #about {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .left-about-section img {
+    width: 100%;
+    height: 100%;
+  }
+  .right-about-section {
+    text-align: center;
+    padding-left: 0;
+    h2 {
+      padding-top: 100px;
+    }
+  }
+}
+@media (min-width: 1400.02px) and (max-width: 2100px) {
+  #header {
+    display: flex;
+    padding: 60px 30px 0 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .right-header-section {
+    display: none;
+  }
+}

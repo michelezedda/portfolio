@@ -1,0 +1,136 @@
+@import "config";
+
+#portfolio {
+  padding: 150px 80px 0 80px;
+}
+.portfolio-container h2 {
+  font-size: 80px;
+  color: $purple-color;
+  font-weight: 500;
+}
+.works-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 30px;
+  row-gap: 40px;
+  padding-top: 50px;
+  a {
+    text-decoration: none;
+  }
+  div {
+    text-align: center;
+    background: lighten($black-color, 15%);
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    cursor: pointer;
+  }
+  img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%;
+    padding-bottom: 15px;
+  }
+  i {
+    font-size: 22px;
+    padding-right: 10px;
+    color: $purple-color;
+  }
+  div:hover {
+    background-color: $hover-container-color;
+    transform: translateY(-10px);
+    box-shadow: 4px 4px 8px $gray-color;
+  }
+}
+.work-name {
+  color: $purple-color;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.blocked {
+  background-color: #ddd;
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: $purple-color;
+}
+.work-description {
+  color: $primary-color;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.onlydesktop-disclaimer {
+  display: none;
+}
+
+// MEDIA QUERIES //
+@media (max-width: 750px) {
+  #portfolio {
+    padding: 150px 30px 0 30px;
+  }
+  .portfolio-container h2 {
+    padding-top: 0;
+  }
+  .works-list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 20px;
+    padding-top: 40px;
+    .non-click {
+      pointer-events: none;
+    }
+    .bookshelf {
+      background-color: $gray-color;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .bookshelf:hover {
+      transform: none;
+      background-color: $gray-color;
+      box-shadow: none;
+    }
+    .onlydesktop-disclaimer {
+      display: block;
+      color: red;
+      font-weight: 500;
+      padding-bottom: 25px;
+    }
+  }
+}
+@media (min-width: 750.02px) and (max-width: 1400px) {
+  #portfolio {
+    padding: 150px 30px 0 30px;
+  }
+  .portfolio-container {
+    text-align: center;
+    h2 {
+      padding-top: 100px;
+    }
+  }
+  .works-list {
+    row-gap: 20px;
+    padding-top: 40px;
+    img {
+      max-width: 100%;
+    }
+    .non-click {
+      pointer-events: none;
+    }
+    .bookshelf {
+      background-color: $gray-color;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .bookshelf:hover {
+      transform: none;
+      background-color: $gray-color;
+      box-shadow: none;
+    }
+    .onlydesktop-disclaimer {
+      display: block;
+      color: red;
+      font-weight: 500;
+      padding-bottom: 25px;
+    }
+  }
+}
+@media (min-width: 1400.02px) and (max-width: 2100px) {
+}

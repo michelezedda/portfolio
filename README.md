@@ -23,11 +23,14 @@ My personal website is an online portfolio to showcase my work, skills, and achi
 - Footer: A short section with my social media and copyright.
 
 ## Technologies Used
-- HTML5 & CSS3: Markup and styling languages for building web pages;
-- Sass: CSS extension language for web development efficiency;
-- JavaScript: A programming language for adding interactivity to web applications;
-- Git: A version control system for tracking changes and collaborating on projects;
-- GitHub Pages: A platform for hosting and deploying web applications.
+HTML5 & CSS3: Markup and styling languages for building web pages;
+Sass: CSS extension language for web development efficiency;
+JavaScript: A programming language for adding interactivity to web applications;
+Git: A version control system for tracking changes and collaborating on projects;
+GitHub Pages: A platform for hosting and deploying web applications;
+Node.js: Fast, scalable server-side JavaScript runtime for real-time applications and APIs;
+React: A JavaScript library for building dynamic user interfaces, known for its component-based approach and efficient rendering;
+Vite: A next-generation front-end dev tool, aiming to improve the developer experience of webpack when it comes to developing JavaScript applications.
 
 ## Project Link
 You see my personal website by clicking the following link :link: [Michele Zedda Portfolio](https://michelezedda.netlify.app/) <br/>

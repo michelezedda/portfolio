@@ -19,7 +19,7 @@
 }
 .title {
   padding-top: 30px;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 700;
   span {
     color: $purple-color;
@@ -44,6 +44,9 @@
   }
   .left-header-section h1 {
     padding-top: 0;
+  }
+  .title {
+    font-size: 60px;
   }
   .right-header-section {
     display: none;

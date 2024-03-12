@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/portfolio.css";
 import WorkCard from "../components/WorkCard";
 
@@ -37,7 +37,7 @@ function Portfolio() {
       workDescription: "Your personal book concierge",
       workImg: "/public/bookshelf.png",
       workLink: "https://bookshelf-search.netlify.app/",
-      isMobileCompatible: false,
+      isMobileCompatible: !isMobileCompatible,
     },
     {
       id: 3,
@@ -71,16 +71,18 @@ function Portfolio() {
         <div className="portfolio-container">
           <h2>My Works</h2>
           <div className="works-list">
-            {works.map((work) => (
-              <WorkCard
-                key={work.id}
-                workTitle={work.workTitle}
-                workDescription={work.workDescription}
-                workImg={work.workImg}
-                workLink={work.workLink}
-                isMobileCompatible={isMobileCompatible}
-              />
-            ))}
+            {works
+              .filter((work) => work.isMobileCompatible === isMobileCompatible)
+              .map((work) => (
+                <WorkCard
+                  key={work.id}
+                  workTitle={work.workTitle}
+                  workDescription={work.workDescription}
+                  workImg={work.workImg}
+                  workLink={work.workLink}
+                  isMobileCompatible={work.isMobileCompatible}
+                />
+              ))}
           </div>
         </div>
       </div>

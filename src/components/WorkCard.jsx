@@ -1,17 +1,7 @@
 import "../styles/portfolio.css";
 import { Link } from "react-router-dom";
 
-function WorkCard({
-  workLink,
-  workImg,
-  workTitle,
-  workDescription,
-  isMobileCompatible,
-}) {
-  if (isMobileCompatible) {
-    return null;
-  }
-
+function WorkCard({ workLink, workImg, workTitle, workDescription }) {
   return (
     <div>
       <Link to={workLink} target="_blank">

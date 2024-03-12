@@ -1,6 +1,6 @@
 import "../styles/about.css";
 import { Link } from "react-router-dom";
-import MyPic from "/public/profile-icon.png";
+import MyPic from "/profile-icon.png";
 import { FaFile } from "react-icons/fa6";
 
 function About() {

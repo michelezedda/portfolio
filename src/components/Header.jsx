@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
 import "../styles/header.css";
-import MyHeaderPic from "/public/coding.gif";
+import MyHeaderPic from "/coding.gif";
 
 function Header() {
   useEffect(() => {

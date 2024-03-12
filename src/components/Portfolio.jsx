@@ -1,6 +1,11 @@
 import "../styles/portfolio.css";
 import WorkCard from "../components/WorkCard";
-import theHandGamePic from "/public/thehandgame.png";
+import theHandGamePic from "/thehandgame.png";
+import infinityCounterPic from "/infinitycounter.png";
+import bookshelfPic from "/bookshelf.png";
+import listPlannerPic from "/listplanner.png";
+import timeTrackerPic from "/timetracker.png";
+import plantpleaserPic from "/plantpleaser.png";
 
 function Portfolio() {
   const works = [
@@ -8,42 +13,42 @@ function Portfolio() {
       id: 0,
       workTitle: "theHandGame",
       workDescription: "The iconic rock-paper-scissors game",
-      workImg: { theHandGamePic },
+      workImg: theHandGamePic,
       workLink: "https://thehandgame.netlify.app",
     },
     {
       id: 1,
       workTitle: "infinityCounter",
       workDescription: "Effortless counting at your fingertips",
-      workImg: "/public/infinitycounter.png",
+      workImg: infinityCounterPic,
       workLink: "https://infinitycounter.netlify.app",
     },
     {
       id: 2,
       workTitle: "bookshelf",
       workDescription: "Your personal book concierge",
-      workImg: "/public/bookshelf.png",
+      workImg: bookshelfPic,
       workLink: "https://bookshelf-search.netlify.app/",
     },
     {
       id: 3,
       workTitle: "ListPlanner",
       workDescription: "Organize tasks effortlessly",
-      workImg: "/public/listplanner.png",
+      workImg: listPlannerPic,
       workLink: "https://listplanner.netlify.app/",
     },
     {
       id: 4,
       workTitle: "TimeTracker",
       workDescription: "Accurate digital time at your fingertips",
-      workImg: "/public/timetracker.png",
+      workImg: timeTrackerPic,
       workLink: "https://app-timetracker.netlify.app/",
     },
     {
       id: 5,
       workTitle: "plantpleaser",
       workDescription: "Unlock a world of delicious vegetarian possibilities",
-      workImg: "/public/plantpleaser.png",
+      workImg: plantpleaserPic,
       workLink: "https://plantpleaser.netlify.app/",
     },
   ];

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/portfolio.css";
 import WorkCard from "../components/WorkCard";
-import theHandGame from "../public/thehandgame.png";
+import theHandGamePic from "../public/thehandgame.png";
 
 function Portfolio() {
   const [isMobileCompatible, setIsMobileCompatible] = useState(true);
@@ -20,7 +20,7 @@ function Portfolio() {
       id: 0,
       workTitle: "theHandGame",
       workDescription: "The iconic rock-paper-scissors game",
-      workImg: { theHandGame },
+      workImg: { theHandGamePic },
       workLink: "https://thehandgame.netlify.app",
       isMobileCompatible: true,
     },

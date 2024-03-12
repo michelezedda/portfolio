@@ -1,5 +1,6 @@
 import "../styles/portfolio.css";
 import WorkCard from "../components/WorkCard";
+import theHandGamePic from "/public/thehandgame.png";
 
 function Portfolio() {
   const works = [
@@ -7,7 +8,7 @@ function Portfolio() {
       id: 0,
       workTitle: "theHandGame",
       workDescription: "The iconic rock-paper-scissors game",
-      workImg: "/public/thehandgame.png",
+      workImg: { theHandGamePic },
       workLink: "https://thehandgame.netlify.app",
     },
     {

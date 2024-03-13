@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <img src="https://i.postimg.cc/3Rxz699k/Architect-Linkedin-Background.png" width="400">
+    <img src="https://i.postimg.cc/3Rxz699k/Architect-Linkedin-Background.png" width="1000">
   <br>
   My Portfolio
   <br>

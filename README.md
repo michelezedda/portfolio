@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <img src="https://i.ibb.co/xjQ2F9y/Black-and-Purple-Gaming-Avatar-Logo.png" width="400">
+    <img src="https://i.postimg.cc/3Rxz699k/Architect-Linkedin-Background.png" width="400">
   <br>
   My Portfolio
   <br>

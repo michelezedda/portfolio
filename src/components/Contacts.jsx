@@ -1,5 +1,5 @@
 import "../styles/contacts.css";
-import MyContactsPic from "/public/mobile.gif";
+import MyContactsPic from "/mobile.gif";
 
 function Contacts() {
   return (

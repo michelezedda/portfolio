@@ -46,15 +46,15 @@ function Skills() {
             </div>
             <div>
               <i>
-                <SiTailwindcss />
-              </i>
-              <p>Tailwind</p>
-            </div>
-            <div>
-              <i>
                 <FaSass />
               </i>
               <p>Sass</p>
+            </div>
+            <div>
+              <i>
+                <SiTailwindcss />
+              </i>
+              <p>Tailwind</p>
             </div>
             <div>
               <i>

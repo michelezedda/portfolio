@@ -11,6 +11,7 @@
   width: 100%;
   height: 100%;
   h1 {
+    text-align: left;
     color: $primary-color;
     padding-top: 250px;
     font-size: 30px;
@@ -18,8 +19,8 @@
   }
 }
 .title {
-  padding-top: 30px;
-  font-size: 80px;
+  padding-top: 20px;
+  font-size: 75px;
   font-weight: 700;
   span {
     color: $purple-color;
@@ -30,7 +31,7 @@
   justify-self: center;
   img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: fill;
   }
 }
@@ -43,7 +44,12 @@
     width: 100%;
   }
   .left-header-section h1 {
+    font-size: 30px;
     padding-top: 0;
+    text-align: center;
+  }
+  .title {
+    font-size: 60px;
   }
   .right-header-section {
     display: none;
@@ -54,6 +60,9 @@
     display: flex;
     padding: 60px 30px 0 30px;
     width: 100%;
+    text-align: center;
+  }
+  .left-header-section h1 {
     text-align: center;
   }
   .right-header-section {
@@ -82,6 +91,9 @@
     display: flex;
     padding: 60px 30px 0 30px;
     width: 100%;
+    text-align: center;
+  }
+  .left-header-section h1 {
     text-align: center;
   }
   .right-header-section {

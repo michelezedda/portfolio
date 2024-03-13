@@ -1,67 +1,55 @@
-import React, { useEffect, useState } from "react";
 import "../styles/portfolio.css";
 import WorkCard from "../components/WorkCard";
+import theHandGamePic from "/thehandgame.png";
+import infinityCounterPic from "/infinitycounter.png";
+import bookshelfPic from "/bookshelf.png";
+import listPlannerPic from "/listplanner.png";
+import timeTrackerPic from "/timetracker.png";
+import plantpleaserPic from "/plantpleaser.png";
 
 function Portfolio() {
-  const [isMobileCompatible, setIsMobileCompatible] = useState(true);
-
-  useEffect(() => {
-    const userAgent = window.navigator.userAgent;
-    setIsMobileCompatible(
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        userAgent
-      )
-    );
-  }, []);
-
   const works = [
     {
       id: 0,
       workTitle: "theHandGame",
       workDescription: "The iconic rock-paper-scissors game",
-      workImg: "/public/thehandgame.png",
+      workImg: theHandGamePic,
       workLink: "https://thehandgame.netlify.app",
-      isMobileCompatible: true,
     },
     {
       id: 1,
       workTitle: "infinityCounter",
       workDescription: "Effortless counting at your fingertips",
-      workImg: "/public/infinitycounter.png",
+      workImg: infinityCounterPic,
       workLink: "https://infinitycounter.netlify.app",
-      isMobileCompatible: true,
     },
     {
       id: 2,
       workTitle: "bookshelf",
       workDescription: "Your personal book concierge",
-      workImg: "/public/bookshelf.png",
+      workImg: bookshelfPic,
       workLink: "https://bookshelf-search.netlify.app/",
-      isMobileCompatible: false,
     },
     {
       id: 3,
       workTitle: "ListPlanner",
       workDescription: "Organize tasks effortlessly",
-      workImg: "/public/listplanner.png",
+      workImg: listPlannerPic,
       workLink: "https://listplanner.netlify.app/",
-      isMobileCompatible: true,
     },
     {
       id: 4,
       workTitle: "TimeTracker",
       workDescription: "Accurate digital time at your fingertips",
-      workImg: "/public/timetracker.png",
+      workImg: timeTrackerPic,
       workLink: "https://app-timetracker.netlify.app/",
-      isMobileCompatible: true,
     },
     {
       id: 5,
       workTitle: "plantpleaser",
       workDescription: "Unlock a world of delicious vegetarian possibilities",
-      workImg: "/public/plantpleaser.png",
+      workImg: plantpleaserPic,
       workLink: "https://plantpleaser.netlify.app/",
-      isMobileCompatible: true,
     },
   ];
 
@@ -78,7 +66,6 @@ function Portfolio() {
                 workDescription={work.workDescription}
                 workImg={work.workImg}
                 workLink={work.workLink}
-                isMobileCompatible={isMobileCompatible}
               />
             ))}
           </div>

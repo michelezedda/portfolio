@@ -1,5 +1,5 @@
 import "../styles/cvnavbar.css";
-import MyLogo from "/public/logo.png";
+import MyLogo from "/logo.png";
 import { Link } from "react-router-dom";
 import { FaAngleLeft } from "react-icons/fa6";
 

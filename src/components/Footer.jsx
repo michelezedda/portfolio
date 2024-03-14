@@ -1,8 +1,10 @@
 import "../styles/footer.css";
 import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { FaThreads } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation("global");
   const currentYear = new Date().getFullYear();
   return (
     <>
@@ -36,7 +38,9 @@ function Footer() {
           </a>
         </div>
         <div className="copyright">
-          <p>&copy; {currentYear} Michele Zedda. All rights reserved.</p>
+          <p>
+            &copy; {currentYear} Michele Zedda. {t("footer.copyright")}
+          </p>
           <br />
           <a href="https://storyset.com/technology">
             Illustrations by Storyset

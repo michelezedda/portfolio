@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <img src="https://i.ibb.co/xjQ2F9y/Black-and-Purple-Gaming-Avatar-Logo.png" width="400">
+    <img src="https://i.postimg.cc/3Rxz699k/Architect-Linkedin-Background.png" width="1000">
   <br>
   My Portfolio
   <br>
@@ -17,7 +17,7 @@ My personal website is an online portfolio to showcase my work, skills, and achi
 ## Sections
 - Home: A brief introduction about me and my job title;
 - About Me: An overview of my background, with a button that allows to view my CV;
-- My Services: A list of my proficiencies;
+- My Skills: A list of my proficiencies;
 - My Works: A collection of my projects with descriptions and clickable links;
 - Contact Me: A form to send me messages;
 - Footer: A short section with my social media and copyright.

@@ -1,9 +1,12 @@
 import "../styles/about.css";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import MyPic from "/profile-icon.png";
 import { FaFile } from "react-icons/fa6";
 
 function About() {
+  const { t } = useTranslation("global");
+
   return (
     <>
       <div id="about">
@@ -11,27 +14,21 @@ function About() {
           <img src={MyPic} alt="Michele Zedda Profile Picture" />
         </div>
         <div className="right-about-section">
-          <h2>About Me</h2>
+          <h2>{t("about.title")}</h2>
           <p className="about-description">
-            {" "}
-            Hello there! I'm <span>Michele</span>, a passionate 27-year-old on a
-            journey into the exciting world of web development. Currently based
-            in Italy, as a start2impact University student I'm immersed in the
-            dynamic realm of coding, design, and everything web-related. <br />
-            My fascination with web development goes beyond just creating
-            functional websites; it's about crafting immersive digital
-            experiences. I believe in the power of clean code, intuitive design,
-            and seamless user interactions to make the web a better place.{" "}
+            {t("about.description1")}
+            <span>Michele</span>,{t("about.description2")}
             <br />
-            Let's connect, collaborate, and create something extraordinary.
-            Together, we can turn dreams into digital realities!{" "}
+            {t("about.description3")}
+            <br />
+            {t("about.description4")}
           </p>
           <Link to="/curriculum/">
             <button className="button">
               <i>
                 <FaFile />
               </i>
-              &nbsp; View curriculum
+              &nbsp; {t("about.button")}
             </button>
           </Link>
         </div>

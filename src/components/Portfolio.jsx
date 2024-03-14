@@ -1,4 +1,5 @@
 import "../styles/portfolio.css";
+import { useTranslation } from "react-i18next";
 import WorkCard from "../components/WorkCard";
 import theHandGamePic from "/thehandgame.png";
 import infinityCounterPic from "/infinitycounter.png";
@@ -8,6 +9,8 @@ import timeTrackerPic from "/timetracker.png";
 import plantpleaserPic from "/plantpleaser.png";
 
 function Portfolio() {
+  const { t } = useTranslation("global");
+
   const works = [
     {
       id: 0,
@@ -57,7 +60,7 @@ function Portfolio() {
     <>
       <div id="portfolio">
         <div className="portfolio-container">
-          <h2>My Works</h2>
+          <h2>{t("portfolio.title")}</h2>
           <div className="works-list">
             {works.map((work) => (
               <WorkCard

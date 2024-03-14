@@ -1,9 +1,9 @@
-import "../styles/cvnavbar.css";
+import "../styles/returnnavbar.css";
 import MyLogo from "/logo.png";
 import { Link } from "react-router-dom";
 import { FaAngleLeft } from "react-icons/fa6";
 
-function CvNavbar() {
+function ReturnNavbar() {
   return (
     <>
       <div className="cvnavbar">
@@ -24,4 +24,4 @@ function CvNavbar() {
   );
 }
 
-export default CvNavbar;
+export default ReturnNavbar;

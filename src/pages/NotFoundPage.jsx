@@ -1,5 +1,5 @@
 import "../styles/notfoundpage.css";
-import Navbar from "../components/Navbar";
+import ReturnNavbar from "../components/ReturnNavbar";
 import Footer from "../components/Footer";
 import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ import myErrorPic from "/public/error.gif";
 function NotFoundPage() {
   return (
     <>
-      <Navbar />
+      <ReturnNavbar />
       <div className="notfoundpage-container">
         <img src={myErrorPic} />
         <h2>

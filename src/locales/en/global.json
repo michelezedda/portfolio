@@ -1,0 +1,48 @@
+{
+  "navbar": {
+    "about": "About",
+    "contacts": "Contacts"
+  },
+  "header": {
+    "hi": "Hi",
+    "im": "I'm"
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "Hello there! I'm ",
+    "description2": " a passionate 28-year-old on a journey into the exciting world of web development. Currently based in Italy, as a start2impact University student I'm immersed in the dynamic realm of coding, design, and everything web-related.",
+    "description3": "My fascination with web development goes beyond just creating functional websites; it's about crafting immersive digital experiences. I believe in the power of clean code, intuitive design, and seamless user interactions to make the web a better place.",
+    "description4": "Let's connect, collaborate, and create something extraordinary. Together, we can turn dreams into digital realities!",
+    "button": "View curriculum"
+  },
+  "skills": {
+    "title": "My Skills"
+  },
+  "portfolio": {
+    "title": "My Works"
+  },
+  "contacts": {
+    "title": "Contact Me"
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  },
+  "notfoundpage": {
+    "title": "Oops! It seems like we took a wrong turn. This page must be off on an adventure. Let's guide you back to safety."
+  },
+  "curriculum": {
+    "informations": "Personal Information",
+    "career-obj": "Career Objective",
+    "career-obj-description1": "Aspiring to become a proficient web developer, my career objective is to leverage my passion for coding and problem-solving to create dynamic and user-friendly websites.",
+    "career-obj-description2": "I see myself collaborate within dynamic teams and contribute to the evolving landscape of web development. Committed to delivering high-quality, responsive, and visually appealing websites to enhance user engagement.",
+    "education": "Education",
+    "high-school": "High School",
+    "high-school-description": "Tourism and Hospitality",
+    "work-history": "Work History",
+    "work1-title": "Liggi Dental Clinic",
+    "work2-description": "Insurance Agent",
+    "languages": "Lingue",
+    "english": "English",
+    "italian": "Italian"
+  }
+}

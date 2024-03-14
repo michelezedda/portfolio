@@ -1,6 +1,7 @@
 import "../styles/contacts.css";
 import { useTranslation } from "react-i18next";
 import MyContactsPic from "/mobile.gif";
+import { FaPaperPlane } from "react-icons/fa";
 
 function Contacts() {
   const { t } = useTranslation("global");
@@ -28,7 +29,9 @@ function Contacts() {
                 <textarea name="Message" rows="10" placeholder="Your message" />
                 <button type="submit" className="button">
                   {t("contacts.button")} &nbsp;
-                  <i className="fa-solid fa-paper-plane"></i>
+                  <i>
+                    <FaPaperPlane />
+                  </i>
                 </button>
               </form>
             </div>

@@ -22,7 +22,8 @@
     "title": "My Works"
   },
   "contacts": {
-    "title": "Contact Me"
+    "title": "Contact Me",
+    "button": "Send"
   },
   "footer": {
     "copyright": "All rights reserved."

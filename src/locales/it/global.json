@@ -22,7 +22,8 @@
     "title": "I miei lavori"
   },
   "contacts": {
-    "title": "Contattami"
+    "title": "Contattami",
+    "button": "Invia"
   },
   "footer": {
     "copyright": "Tutti i diritti riservati."

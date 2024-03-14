@@ -27,7 +27,8 @@ function Contacts() {
                 />
                 <textarea name="Message" rows="10" placeholder="Your message" />
                 <button type="submit" className="button">
-                  Send &nbsp;<i className="fa-solid fa-paper-plane"></i>
+                  {t("contacts.button")} &nbsp;
+                  <i className="fa-solid fa-paper-plane"></i>
                 </button>
               </form>
             </div>

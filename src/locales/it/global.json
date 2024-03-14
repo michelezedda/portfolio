@@ -1,0 +1,48 @@
+{
+  "navbar": {
+    "about": "Profilo",
+    "contacts": "Contatti"
+  },
+  "header": {
+    "hi": "Ciao",
+    "im": "sono"
+  },
+  "about": {
+    "title": "Su di me",
+    "description1": "Ciao! Sono ",
+    "description2": " un 28enne appassionato di sviluppo web. Attualmente risiedo in Italia e come studente di start2impact University sono immerso nel regno dinamico della codifica, del design e di tutto ciò che riguarda il web.",
+    "description3": "La mia passione per lo sviluppo web va oltre la semplice creazione di siti web funzionali; si tratta di creare esperienze digitali coinvolgenti. Credo nel potere del codice pulito, del design intuitivo e delle interazioni fluide con l'utente per rendere il web un posto migliore. ",
+    "description4": "Connettiamoci, collaboriamo e creiamo qualcosa di straordinario. Insieme possiamo trasformare i sogni in realtà digitali!",
+    "button": "Vedi curriculum"
+  },
+  "skills": {
+    "title": "Le mie skills"
+  },
+  "portfolio": {
+    "title": "I miei lavori"
+  },
+  "contacts": {
+    "title": "Contattami"
+  },
+  "footer": {
+    "copyright": "Tutti i diritti riservati."
+  },
+  "notfoundpage": {
+    "title": "Uh-oh! Ti sei imbattuto nel vuoto. Questa pagina non si trova da nessuna parte."
+  },
+  "curriculum": {
+    "informations": "Informazioni Personali",
+    "career-obj": "Obiettivo lavorativo",
+    "career-obj-description1": "Aspirando a diventare un abile sviluppatore web, il mio obiettivo professionale è sfruttare la mia passione per la programmazione e la risoluzione dei problemi per creare siti web dinamici e di facile utilizzo.",
+    "career-obj-description2": "Mi vedo a collaborare all'interno di team dinamici e a contribuire al panorama in continua evoluzione di questo settore, impegnandomi a creare siti web di alta qualità, reattivi e visivamente accattivanti per migliorare il coinvolgimento degli utenti.",
+    "education": "Formazione",
+    "high-school": "Diploma",
+    "high-school-description": "Turismo ed ospitalità alberghiera",
+    "work-history": "Esperienza lavorativa",
+    "work1-title": "Studio Dentistico Liggi",
+    "work2-description": "Agente Assicurativo",
+    "languages": "Lingue",
+    "english": "Inglese",
+    "italian": "Italiano"
+  }
+}

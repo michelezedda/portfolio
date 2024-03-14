@@ -1,7 +1,20 @@
 import "../styles/navbar.css";
 import MyLogo from "/logo.png";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import USflag from "/USflag.png";
+import ITflag from "/ITflag.png";
 
 function Navbar() {
+  const { t } = useTranslation("global");
+  const { i18n } = useTranslation();
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+    setCurrentLanguage(language);
+  };
+
   return (
     <>
       <nav>
@@ -15,7 +28,7 @@ function Navbar() {
             <a href="#header">Home</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">{t("navbar.about")}</a>
           </li>
           <li>
             <a href="#skills">Skills</a>
@@ -24,7 +37,17 @@ function Navbar() {
             <a href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="#contacts">Contacts</a>
+            <a href="#contacts">{t("navbar.contacts")}</a>
+          </li>
+          <li>
+            <img
+              className="language-switcher"
+              onClick={() =>
+                changeLanguage(currentLanguage === "en" ? "it" : "en")
+              }
+              src={currentLanguage === "en" ? ITflag : USflag}
+              alt={currentLanguage === "en" ? "Italian" : "English"}
+            />
           </li>
         </ul>
       </nav>

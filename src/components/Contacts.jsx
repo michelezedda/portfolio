@@ -1,13 +1,16 @@
 import "../styles/contacts.css";
+import { useTranslation } from "react-i18next";
 import MyContactsPic from "/mobile.gif";
 
 function Contacts() {
+  const { t } = useTranslation("global");
+
   return (
     <>
       <div id="contacts">
         <div className="contacts-container">
           <div className="left-contacts-section">
-            <h2>Contact Me</h2>
+            <h2>{t("contacts.title")}</h2>
             <div className="contact-form">
               <form action="https://formspree.io/f/xyyqaonk" method="post">
                 <input

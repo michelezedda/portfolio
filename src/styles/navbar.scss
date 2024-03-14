@@ -17,9 +17,11 @@ nav {
   img {
     width: 200px;
   }
-  li {
+  li,
+  .language-switcher {
     display: inline-block;
     list-style: none;
+    vertical-align: middle;
     padding: 10px 20px;
   }
   a {
@@ -44,6 +46,19 @@ nav {
   }
   .menu-btn {
     display: none;
+  }
+  .language-switcher {
+    margin: 0;
+    padding: 0;
+    width: 55px;
+    height: auto;
+  }
+  .language-switcher:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+  }
+  .language-switcher:active {
+    transform: scale(0.9);
   }
 }
 

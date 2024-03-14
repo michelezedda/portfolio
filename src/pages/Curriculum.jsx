@@ -1,5 +1,6 @@
 import "../styles/curriculum.css";
-import CvNavbar from "../components/CvNavbar";
+import { useTranslation } from "react-i18next";
+import ReturnNavbar from "../components/ReturnNavbar";
 import Footer from "../components/Footer";
 import {
   FaIdCardClip,
@@ -16,20 +17,21 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 import { IoSchool, IoLanguageSharp } from "react-icons/io5";
 
 function Curriculum() {
+  const { t } = useTranslation("global");
   return (
     <>
-      <CvNavbar />
+      <ReturnNavbar />
       <h1>MY CURRICULUM</h1>
       <div id="cv">
         <div className="grid-container">
           <div className="personal-info-container">
             <h2>
-              <i>
-                <h2>
+              <h2>
+                <i>
                   <FaIdCardClip />
-                  &nbsp; Personal Information
-                </h2>
-              </i>
+                </i>
+                &nbsp; {t("curriculum.informations")}
+              </h2>
             </h2>
             <p>
               <i>
@@ -76,16 +78,12 @@ function Curriculum() {
               <i>
                 <FaBullseye />
               </i>
-              &nbsp; Career Objective
+              &nbsp; {t("curriculum.career-obj")}
             </h2>
             <p>
-              Aspiring to become a proficient web developer, my career objective
-              is to leverage my passion for coding and problem-solving to create
-              dynamic and user-friendly websites.
-              <br />I see myself collaborate within dynamic teams and contribute
-              to the evolving landscape of web development. Committed to
-              delivering high-quality, responsive, and visually appealing
-              websites to enhance user engagement.
+              {t("curriculum.career-obj-description1")}
+              <br />
+              {t("curriculum.career-obj-description2")}
             </p>
           </div>
         </div>
@@ -94,25 +92,25 @@ function Curriculum() {
             <i>
               <IoSchool />
             </i>
-            &nbsp; Education
+            &nbsp; {t("curriculum.education")}
           </h2>
           <ul>
             <li>start2impact University</li>
             <p>2024 &mdash; Master's degree in Web Development</p>
-            <li>High School</li>
-            <p>2016 &mdash; Tourism and Hospitality</p>
+            <li>{t("curriculum.high-school")}</li>
+            <p>2016 &mdash; {t("curriculum.high-school-description")}</p>
           </ul>
           <h2>
             <i>
               <FaBriefcase />
             </i>
-            &nbsp; Work History
+            &nbsp; {t("curriculum.work-history")}
           </h2>
           <ul>
-            <li>Liggi Dental Clinic</li>
+            <li>{t("curriculum.work1-title")}</li>
             <p>2020-2022 &mdash; Dental Office Manager</p>
             <li>UnipolSai</li>
-            <p>2020 &mdash; Insurance Agent</p>
+            <p>2020 &mdash; {t("curriculum.work2-description")}</p>
           </ul>
           <h2>
             <i>
@@ -143,11 +141,11 @@ function Curriculum() {
             <i>
               <IoLanguageSharp />
             </i>
-            &nbsp; Languages
+            &nbsp; {t("curriculum.languages")}
           </h2>
           <ul>
-            <li>English</li>
-            <li>Italian</li>
+            <li>{t("curriculum.english")}</li>
+            <li>{t("curriculum.italian")}</li>
           </ul>
         </div>
       </div>

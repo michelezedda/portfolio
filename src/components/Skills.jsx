@@ -1,4 +1,5 @@
 import "../styles/skills.css";
+import { useTranslation } from "react-i18next";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -6,19 +7,21 @@ import {
   FaSass,
   FaGithub,
   FaGitSquare,
-  FaNodeJs,
   FaReact,
   FaPhp,
   FaWordpress,
+  FaNodeJs,
 } from "react-icons/fa";
-import { SiJavascript, SiTailwindcss, SiVite } from "react-icons/si";
+import { SiJavascript, SiTailwindcss, SiVite, SiMysql } from "react-icons/si";
 
 function Skills() {
+  const { t } = useTranslation("global");
+
   return (
     <>
       <div id="skills">
         <div className="skills-container">
-          <h2>My Skills</h2>
+          <h2>{t("skills.title")}</h2>
           <div className="skills-list">
             <div>
               <i>
@@ -91,6 +94,12 @@ function Skills() {
                 <FaPhp />
               </i>
               <p>PHP</p>
+            </div>
+            <div>
+              <i>
+                <SiMysql />
+              </i>
+              <p>MySQL</p>
             </div>
             <div>
               <i>

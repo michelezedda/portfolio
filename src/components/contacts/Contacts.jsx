@@ -1,4 +1,4 @@
-import "../styles/contacts.css";
+import "./contacts.css";
 import { useTranslation } from "react-i18next";
 import MyContactsPic from "/mobile.gif";
 import { FaPaperPlane } from "react-icons/fa";

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Typed from "typed.js";
-import "../styles/header.css";
+import "./header.css";
 import MyHeaderPic from "/coding.gif";
 
 function Header() {

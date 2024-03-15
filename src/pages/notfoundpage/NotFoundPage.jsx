@@ -1,13 +1,19 @@
-import "../styles/notfoundpage.css";
-import ReturnNavbar from "../components/ReturnNavbar";
-import Footer from "../components/Footer";
+import "./notfoundpage.css";
+import ReturnNavbar from "../../components/navbar/ReturnNavbar";
+import Footer from "../../components/footer/Footer";
 import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import myErrorPic from "/public/error.gif";
+import { Helmet } from "react-helmet";
 
 function NotFoundPage() {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>[Error 404] Michele Zedda</title>
+        <link rel="canonical" href="https://michelezedda.netlify.app/" />
+      </Helmet>
       <ReturnNavbar />
       <div className="notfoundpage-container">
         <img src={myErrorPic} />

@@ -1,6 +1,6 @@
-import "../styles/portfolio.css";
+import "./portfolio.css";
 import { useTranslation } from "react-i18next";
-import WorkCard from "../components/WorkCard";
+import WorkCard from "./WorkCard";
 import theHandGamePic from "/thehandgame.png";
 import infinityCounterPic from "/infinitycounter.png";
 import bookshelfPic from "/bookshelf.png";

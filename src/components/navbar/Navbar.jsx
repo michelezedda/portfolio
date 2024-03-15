@@ -1,4 +1,4 @@
-import "../styles/navbar.css";
+import "./navbar.css";
 import MyLogo from "/logo.png";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

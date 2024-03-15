@@ -1,7 +1,7 @@
-import "../styles/curriculum.css";
+import "./curriculum.css";
 import { useTranslation } from "react-i18next";
-import ReturnNavbar from "../components/ReturnNavbar";
-import Footer from "../components/Footer";
+import ReturnNavbar from "../../components/navbar/ReturnNavbar";
+import Footer from "../../components/footer/Footer";
 import {
   FaIdCardClip,
   FaUser,
@@ -15,11 +15,17 @@ import { TbWorld } from "react-icons/tb";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { IoSchool, IoLanguageSharp } from "react-icons/io5";
+import { Helmet } from "react-helmet";
 
 function Curriculum() {
   const { t } = useTranslation("global");
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Michele Zedda - Curriculum</title>
+        <link rel="canonical" href="https://michelezedda.netlify.app/" />
+      </Helmet>
       <ReturnNavbar />
       <h1>MY CURRICULUM</h1>
       <div id="cv">

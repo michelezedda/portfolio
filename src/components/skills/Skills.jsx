@@ -1,4 +1,4 @@
-import "../styles/skills.css";
+import "./skills.css";
 import { useTranslation } from "react-i18next";
 import {
   FaHtml5,

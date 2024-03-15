@@ -1,4 +1,4 @@
-import "../styles/about.css";
+import "./about.css";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import MyPic from "/profile-icon.png";

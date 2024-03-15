@@ -1,4 +1,4 @@
-import "../styles/portfolio.css";
+import "./portfolio.css";
 import { Link } from "react-router-dom";
 
 function WorkCard({ workLink, workImg, workTitle, workDescription }) {

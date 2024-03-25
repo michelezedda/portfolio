@@ -8,11 +8,10 @@ import {
   FaGithub,
   FaGitSquare,
   FaReact,
-  FaPhp,
   FaWordpress,
   FaNodeJs,
 } from "react-icons/fa";
-import { SiJavascript, SiTailwindcss, SiVite, SiMysql } from "react-icons/si";
+import { SiJavascript, SiTailwindcss, SiVite } from "react-icons/si";
 
 function Skills() {
   const { t } = useTranslation("global");
@@ -88,18 +87,6 @@ function Skills() {
                 <SiVite />
               </i>
               <p>Vite</p>
-            </div>
-            <div>
-              <i>
-                <FaPhp />
-              </i>
-              <p>PHP</p>
-            </div>
-            <div>
-              <i>
-                <SiMysql />
-              </i>
-              <p>MySQL</p>
             </div>
             <div>
               <i>

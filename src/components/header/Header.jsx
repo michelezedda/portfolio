@@ -23,7 +23,7 @@ function Header() {
     <>
       <div id="header">
         <div className="left-header-section">
-          <h1>JUNIOR FULL STACK DEVELOPER</h1>
+          <h1>JUNIOR FRONTEND DEVELOPER</h1>
           <p className="title">
             {t("header.hi")},
             <br /> {t("header.im")} <span className="typedText"></span>

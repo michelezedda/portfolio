@@ -49,7 +49,7 @@ function Curriculum() {
               <i>
                 <FaTerminal />
               </i>
-              &nbsp; Junior Full Stack Developer
+              &nbsp; Junior Frontend Developer
             </p>
             <p>
               <i>
@@ -140,7 +140,6 @@ function Curriculum() {
             <li>VS Code</li>
             <li>React</li>
             <li>Vite</li>
-            <li>PHP & MySQL</li>
             <li>WordPress</li>
           </ul>
           <h2>

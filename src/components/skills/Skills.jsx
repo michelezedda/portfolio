@@ -8,10 +8,10 @@ import {
   FaGithub,
   FaGitSquare,
   FaReact,
-  FaWordpress,
   FaNodeJs,
 } from "react-icons/fa";
 import { SiJavascript, SiTailwindcss, SiVite } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 
 function Skills() {
   const { t } = useTranslation("global");
@@ -90,9 +90,9 @@ function Skills() {
             </div>
             <div>
               <i>
-                <FaWordpress />
+                <TbBrandReactNative />
               </i>
-              <p>WordPress</p>
+              <p>React Native</p>
             </div>
           </div>
         </div>

@@ -140,7 +140,6 @@ function Curriculum() {
             <li>VS Code</li>
             <li>React</li>
             <li>Vite</li>
-            <li>WordPress</li>
           </ul>
           <h2>
             <i>

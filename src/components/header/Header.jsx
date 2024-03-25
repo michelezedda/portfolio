@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Typed from "typed.js";
 import "./header.css";
-import MyHeaderPic from "/coding.gif";
+import MyHeaderPic from "/coding.png";
 
 function Header() {
   const { t } = useTranslation("global");

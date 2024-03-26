@@ -1,7 +1,8 @@
 {
   "navbar": {
     "about": "Profilo",
-    "contacts": "Contatti"
+    "contacts": "Contatti",
+    "projects": "Lavori"
   },
   "header": {
     "hi": "Ciao",

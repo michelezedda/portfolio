@@ -1,7 +1,8 @@
 {
   "navbar": {
     "about": "About",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "projects": "Projects"
   },
   "header": {
     "hi": "Hi",

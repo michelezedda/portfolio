@@ -34,7 +34,7 @@ function Navbar() {
             <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
             <a href="#contacts">{t("navbar.contacts")}</a>

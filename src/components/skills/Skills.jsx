@@ -11,7 +11,6 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import { SiJavascript, SiTailwindcss, SiVite } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
 
 function Skills() {
   const { t } = useTranslation("global");
@@ -87,12 +86,6 @@ function Skills() {
                 <SiVite />
               </i>
               <p>Vite</p>
-            </div>
-            <div>
-              <i>
-                <TbBrandReactNative />
-              </i>
-              <p>React Native</p>
             </div>
           </div>
         </div>

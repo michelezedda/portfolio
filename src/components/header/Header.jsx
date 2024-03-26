@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Typed from "typed.js";
 import "./header.css";
-import MyHeaderPic from "/coding.png";
+import MyHeaderVid from "/coding.mp4";
 
 function Header() {
   const { t } = useTranslation("global");
@@ -30,7 +30,9 @@ function Header() {
           </p>
         </div>
         <div className="right-header-section">
-          <img src={MyHeaderPic} alt="Header" />
+          <video autoPlay loop muted>
+            <source src={MyHeaderVid} type="video/mp4" />
+          </video>
         </div>
       </div>
     </>

@@ -29,10 +29,10 @@
 .right-header-section {
   justify-self: center;
   padding-left: 10px;
-  img {
+  video {
     width: 80%;
-    height: 110%;
-    object-fit: contain;
+    height: 140%;
+    object-fit: scale-down;
   }
 }
 

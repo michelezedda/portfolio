@@ -1,6 +1,6 @@
 import "./contacts.css";
 import { useTranslation } from "react-i18next";
-import MyContactsPic from "/mobile.gif";
+import MyContactsVid from "/ghost.mp4";
 import { FaPaperPlane } from "react-icons/fa";
 
 function Contacts() {
@@ -37,7 +37,9 @@ function Contacts() {
             </div>
           </div>
           <div className="right-contacts-section">
-            <img src={MyContactsPic} />
+            <video autoPlay loop muted>
+              <source src={MyContactsVid} type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>

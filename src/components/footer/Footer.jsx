@@ -41,10 +41,6 @@ function Footer() {
           <p>
             &copy; {currentYear} Michele Zedda. {t("footer.copyright")}
           </p>
-          <br />
-          <a href="https://storyset.com/technology">
-            Illustrations by Storyset
-          </a>
         </div>
       </div>
     </>

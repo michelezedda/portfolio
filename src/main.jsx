@@ -6,8 +6,8 @@ import i18next from "i18next";
 import global_en from "./locales/en/global.json";
 import global_it from "./locales/it/global.json";
 import App from "./App.jsx";
-import Curriculum from "./pages/Curriculum.jsx";
-import NotFoundPage from "./pages/NotFoundPage.jsx";
+import Curriculum from "./pages/curriculum/Curriculum.jsx";
+import NotFoundPage from "./pages/notfoundpage/NotFoundPage.jsx";
 
 const routerConfig = [
   {

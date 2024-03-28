@@ -1,7 +1,8 @@
 {
   "navbar": {
     "about": "Profilo",
-    "contacts": "Contatti"
+    "contacts": "Contatti",
+    "projects": "Lavori"
   },
   "header": {
     "hi": "Ciao",
@@ -11,18 +12,18 @@
     "title": "Su di me",
     "description1": "Ciao! Sono ",
     "description2": " un 28enne appassionato di sviluppo web. Attualmente risiedo in Italia e come studente di start2impact University sono immerso nel regno dinamico della codifica, del design e di tutto ciò che riguarda il web.",
-    "description3": "La mia passione per lo sviluppo web va oltre la semplice creazione di siti web funzionali; si tratta di creare esperienze digitali coinvolgenti. Credo nel potere del codice pulito, del design intuitivo e delle interazioni fluide con l'utente per rendere il web un posto migliore. ",
-    "description4": "Connettiamoci, collaboriamo e creiamo qualcosa di straordinario. Insieme possiamo trasformare i sogni in realtà digitali!",
+    "description3": "Amo la semplicità della codifica, il design intuitivo e la fluidità delle interazioni utente. Mi impegno a creare esperienze digitali che siano facili da usare e il più coinvolgenti possibile.",
     "button": "Vedi curriculum"
   },
   "skills": {
     "title": "Le mie skills"
   },
-  "portfolio": {
+  "projects": {
     "title": "I miei lavori"
   },
   "contacts": {
-    "title": "Contattami"
+    "title": "Contattami",
+    "button": "Invia"
   },
   "footer": {
     "copyright": "Tutti i diritti riservati."

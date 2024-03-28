@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Typed from "typed.js";
-import "../styles/header.css";
-import MyHeaderPic from "/coding.gif";
+import "./header.css";
+import MyHeaderVid from "/coding.mp4";
 
 function Header() {
   const { t } = useTranslation("global");
@@ -23,14 +23,16 @@ function Header() {
     <>
       <div id="header">
         <div className="left-header-section">
-          <h1>JUNIOR FULL STACK DEVELOPER</h1>
+          <h1>JUNIOR FRONTEND DEVELOPER</h1>
           <p className="title">
             {t("header.hi")},
             <br /> {t("header.im")} <span className="typedText"></span>
           </p>
         </div>
         <div className="right-header-section">
-          <img src={MyHeaderPic} alt="Header" />
+          <video autoPlay loop muted>
+            <source src={MyHeaderVid} type="video/mp4" />
+          </video>
         </div>
       </div>
     </>

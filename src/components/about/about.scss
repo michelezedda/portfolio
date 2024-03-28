@@ -1,8 +1,8 @@
-@import "config";
+@import "../../styles/config";
 
 #about {
   display: flex;
-  padding: 150px 80px 0 80px;
+  padding: 250px 80px 0 80px;
   width: 100%;
 }
 .left-about-section {
@@ -47,7 +47,7 @@
   #about {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 150px 30px 0 30px;
+    padding: 250px 30px 0 30px;
     width: 100%;
   }
   .left-about-section {
@@ -70,6 +70,7 @@
 }
 @media (min-width: 750.02px) and (max-width: 1400px) {
   #about {
+    padding: 480px 80px 0 80px;
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
@@ -88,6 +89,7 @@
 }
 @media (min-width: 1400.02px) and (max-width: 2100px) {
   #about {
+    padding: 500px 80px 0 80px;
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;

@@ -1,6 +1,7 @@
-import "../styles/contacts.css";
+import "./contacts.css";
 import { useTranslation } from "react-i18next";
-import MyContactsPic from "/mobile.gif";
+import MyContactsVid from "/space.mp4";
+import { FaPaperPlane } from "react-icons/fa";
 
 function Contacts() {
   const { t } = useTranslation("global");
@@ -27,13 +28,18 @@ function Contacts() {
                 />
                 <textarea name="Message" rows="10" placeholder="Your message" />
                 <button type="submit" className="button">
-                  Send &nbsp;<i className="fa-solid fa-paper-plane"></i>
+                  {t("contacts.button")} &nbsp;
+                  <i>
+                    <FaPaperPlane />
+                  </i>
                 </button>
               </form>
             </div>
           </div>
           <div className="right-contacts-section">
-            <img src={MyContactsPic} />
+            <video autoPlay loop muted>
+              <source src={MyContactsVid} type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>

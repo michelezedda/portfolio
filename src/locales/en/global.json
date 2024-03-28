@@ -1,7 +1,8 @@
 {
   "navbar": {
     "about": "About",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "projects": "Projects"
   },
   "header": {
     "hi": "Hi",
@@ -11,18 +12,18 @@
     "title": "About Me",
     "description1": "Hello there! I'm ",
     "description2": " a passionate 28-year-old on a journey into the exciting world of web development. Currently based in Italy, as a start2impact University student I'm immersed in the dynamic realm of coding, design, and everything web-related.",
-    "description3": "My fascination with web development goes beyond just creating functional websites; it's about crafting immersive digital experiences. I believe in the power of clean code, intuitive design, and seamless user interactions to make the web a better place.",
-    "description4": "Let's connect, collaborate, and create something extraordinary. Together, we can turn dreams into digital realities!",
+    "description3": "I love the simplicity of coding, the intuitive design and the fluidity of user interactions. I'm committed to creating digital experiences that are as engaging and as user-friendly as possible.",
     "button": "View curriculum"
   },
   "skills": {
     "title": "My Skills"
   },
-  "portfolio": {
-    "title": "My Works"
+  "projects": {
+    "title": "My Projects"
   },
   "contacts": {
-    "title": "Contact Me"
+    "title": "Contact Me",
+    "button": "Send"
   },
   "footer": {
     "copyright": "All rights reserved."
@@ -41,7 +42,7 @@
     "work-history": "Work History",
     "work1-title": "Liggi Dental Clinic",
     "work2-description": "Insurance Agent",
-    "languages": "Lingue",
+    "languages": "Languages",
     "english": "English",
     "italian": "Italian"
   }

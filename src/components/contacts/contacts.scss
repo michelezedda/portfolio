@@ -1,4 +1,4 @@
-@import "config";
+@import "../../styles/config";
 
 #contacts {
   display: inline-block;
@@ -41,10 +41,9 @@ form textarea {
   max-width: auto-fit;
   justify-self: center;
   padding-left: 10%;
-  img {
-    width: 100%;
+  video {
+    width: 105%;
     height: 100%;
-    object-fit: fill;
   }
 }
 

@@ -1,4 +1,4 @@
-import "../styles/about.css";
+import "./about.css";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import MyPic from "/profile-icon.png";
@@ -18,10 +18,8 @@ function About() {
           <p className="about-description">
             {t("about.description1")}
             <span>Michele</span>,{t("about.description2")}
-            <br />
+            <br /> <br />
             {t("about.description3")}
-            <br />
-            {t("about.description4")}
           </p>
           <Link to="/curriculum/">
             <button className="button">

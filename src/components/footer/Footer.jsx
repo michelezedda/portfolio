@@ -1,4 +1,4 @@
-import "../styles/footer.css";
+import "./footer.css";
 import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { FaThreads } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
@@ -41,10 +41,6 @@ function Footer() {
           <p>
             &copy; {currentYear} Michele Zedda. {t("footer.copyright")}
           </p>
-          <br />
-          <a href="https://storyset.com/technology">
-            Illustrations by Storyset
-          </a>
         </div>
       </div>
     </>

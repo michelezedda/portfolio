@@ -1,4 +1,4 @@
-import "../styles/navbar.css";
+import "./navbar.css";
 import MyLogo from "/logo.png";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -34,7 +34,7 @@ function Navbar() {
             <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#projects">{t("navbar.projects")}</a>
           </li>
           <li>
             <a href="#contacts">{t("navbar.contacts")}</a>

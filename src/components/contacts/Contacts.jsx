@@ -1,6 +1,6 @@
 import "./contacts.css";
 import { useTranslation } from "react-i18next";
-import MyContactsVid from "/ghost.mp4";
+import MyContactsVid from "/space.mp4";
 import { FaPaperPlane } from "react-icons/fa";
 
 function Contacts() {
